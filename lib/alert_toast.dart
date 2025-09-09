@@ -88,7 +88,7 @@ class AlertToast {
                       fontSize: 16.fs,
                       letterSpacing: -0.47.fs,
                       height: 20 / 14,
-                      color: AppThemeUtil.instance.fontColor,
+                      color: AppThemeUtil.instance.pointFontColor,
                     ),
                     textAlign: TextAlign.center,
                     softWrap: true,

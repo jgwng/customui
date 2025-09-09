@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gwui/app_theme_util.dart';
 import 'package:gwui/resources/size.dart';
 import 'package:gwui/resources/styles.dart';
 
@@ -69,7 +70,7 @@ class _CustomButtonState extends State<CustomButton> with SingleTickerProviderSt
             margin: EdgeInsetsDirectional.symmetric(horizontal: widget.horizontalPadding ?? 16.s),
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: widget.buttonColor ?? Colors.transparent,
+              color: AppThemeUtil.instance.pointColor,
               borderRadius: BorderRadius.circular(widget.borderRadius ?? 12),
             ),
             child: Text(

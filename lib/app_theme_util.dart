@@ -14,13 +14,15 @@ class AppThemeUtil {
   Color? _fontColor;
   Color? _backgroundColor;
   Color? _pointColor;
+  Color? _pointFontColor;
   Color? _iconColor;
   GlobalKey<NavigatorState>? _navigatorKey;
 
   // 📌 외부에서 읽기 전용으로 접근
   Color get fontColor => _fontColor ?? Colors.black;
   Color get backgroundColor => _backgroundColor ?? Colors.white;
-  Color get pointColor => _pointColor ?? Colors.white;
+  Color get pointColor => _pointColor ?? Colors.transparent;
+  Color get pointFontColor => _pointFontColor ?? Colors.transparent;
   Color get iconColor => _iconColor ?? Colors.white;
   GlobalKey<NavigatorState>? get navigatorKey => _navigatorKey;
 
@@ -29,12 +31,14 @@ class AppThemeUtil {
     Color? fontColor,
     Color? backgroundColor,
     Color? pointColor,
+    Color? pointFontColor,
     Color? iconColor,
     GlobalKey<NavigatorState>? navigatorKey,
   }) {
     _fontColor = fontColor;
     _backgroundColor = backgroundColor;
     _pointColor = pointColor;
+    _pointFontColor = pointFontColor;
     _iconColor = iconColor;
     _navigatorKey = navigatorKey;
   }
