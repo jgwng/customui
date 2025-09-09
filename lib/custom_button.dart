@@ -70,7 +70,7 @@ class _CustomButtonState extends State<CustomButton> with SingleTickerProviderSt
             margin: EdgeInsetsDirectional.symmetric(horizontal: widget.horizontalPadding ?? 16.s),
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: AppThemeUtil.instance.pointColor,
+              color: widget.buttonColor ?? AppThemeUtil.instance.pointColor,
               borderRadius: BorderRadius.circular(widget.borderRadius ?? 12),
             ),
             child: Text(
